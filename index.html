@@ -1,1 +1,33 @@
-Hi Mike.
+<html>
+  <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.4.3/vuetify.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <div id="vue_app">
+        <v-app dark>
+                <v-container-fluid dark fill-height>
+                    <v-layout  align-center justify-center row fill-height>
+
+                                    <p class="display-4">{{ greeting }}</p>
+
+
+                    </v-layout>
+                </v-container>
+                        
+        </v-app>
+
+
+
+    </div>
+
+  </body>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.4.3/vuetify.js"></script>
+  <script>
+      new Vue({
+          el: '#vue_app',
+          data: { greeting: 'Hi Mike!' }
+      })
+  </script>
+
+  </html>
